@@ -8,6 +8,15 @@
 
 ## Overview
 
+
+![Architecture Diagram](images/workflow.JPG)
+
+
+![Architecture Diagram](images/ETL_Jobrun_success.JPG)
+
+
+![Architecture Diagram](images/cloudwatch-diagram.JPG)
+
 This project implements a fully automated incremental ETL pipeline using AWS Glue, PySpark, Amazon S3, and CloudWatch.
 
 The pipeline:

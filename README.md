@@ -2,7 +2,9 @@
 
 ## Architecture Diagram
 
-![Architecture Diagram](images/architecture-diagram.png)
+
+![Architecture Diagram](images/architecture-diagram.JPG)
+
 
 ## Overview
 

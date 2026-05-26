@@ -15,3 +15,17 @@ The pipeline:
 - performs incremental filtering using watermarking
 - stores partitioned parquet outputs
 - uses workflow orchestration and conditional triggers# aws-glue-incremental-etl-pipeline
+
+  ## Tech Stack
+
+- AWS Glue
+- PySpark
+- Amazon S3
+- CloudWatch
+
+  ## Features
+
+- Incremental watermark processing
+- Workflow orchestration
+- Partitioned parquet output
+- Conditional triggers

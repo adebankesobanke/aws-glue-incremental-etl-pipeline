@@ -20,13 +20,17 @@ The script performs:
 - CloudWatch operational logging
 
 
+Workflow screenshot
 ![Architecture Diagram](images/workflow.JPG)
 
 
+ETL execution screenshot
 ![Architecture Diagram](images/ETL-JobRunSuccess.JPG)
 
 
+CloudWatch screenshot
 ![Architecture Diagram](images/cloudwatch-logs.JPG)
+
 
 This project implements a fully automated incremental ETL pipeline using AWS Glue, PySpark, Amazon S3, and CloudWatch.
 

@@ -12,7 +12,7 @@
 ![Architecture Diagram](images/workflow.JPG)
 
 
-![Architecture Diagram](images/ETL_Jobrun_success.JPG)
+![Architecture Diagram](images/ETL-JobRunSuccess.JPG)
 
 
 ![Architecture Diagram](images/cloudwatch-diagram.JPG)

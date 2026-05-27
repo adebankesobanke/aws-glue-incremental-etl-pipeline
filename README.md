@@ -7,6 +7,17 @@
 
 
 ## Overview
+## ETL Script
+The PySpark ETL implementation is located here:
+
+`scripts/hospital_etl_incremental.py`
+
+The script performs:
+- incremental watermark filtering
+- Spark joins and aggregations
+- parquet output generation
+- automated watermark updates
+- CloudWatch operational logging
 
 
 ![Architecture Diagram](images/workflow.JPG)

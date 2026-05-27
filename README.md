@@ -7,6 +7,22 @@
 
 
 ## Overview
+## Workflow Orchestration
+
+![Workflow Graph](images/workflow-graph.jpg)
+
+The pipeline uses AWS Glue Workflows to orchestrate the end-to-end ETL process.
+
+Workflow execution follows this sequence:
+
+1. A scheduled trigger starts the workflow automatically.
+2. The AWS Glue crawler scans raw hospital datasets stored in Amazon S3.
+3. A conditional trigger waits for crawler completion.
+4. The PySpark ETL job starts automatically after crawler success.
+5. The ETL pipeline processes incremental records and writes curated parquet outputs to Amazon S3.
+
+This orchestration design enables automated, production-style pipeline execution without manual intervention.
+
 ## ETL Script
 The PySpark ETL implementation is located here:
 
@@ -19,9 +35,30 @@ The script performs:
 - automated watermark updates
 - CloudWatch operational logging
 
+## CloudWatch Monitoring
+
+![CloudWatch Logs](images/cloudwatch-logs.jpg)
+Amazon CloudWatch is used for operational monitoring and ETL observability.
+
+The ETL job writes execution logs to CloudWatch, including:
+
+- watermark processing status
+- incremental record detection
+- parquet write confirmation
+- ETL execution progress
+- error and exception tracking
+
+Example monitored events include:
+- Last processed date
+- Parquet write successful
+- New watermark generated
+- Watermark updated successfully
+
+These logs provide visibility into pipeline execution and simplify troubleshooting and operational support.
+
 
 Workflow screenshot
-![Architecture Diagram](images/workflow.JPG)
+![Architecture Diagram](images/workflow-graph.JPG)
 
 
 

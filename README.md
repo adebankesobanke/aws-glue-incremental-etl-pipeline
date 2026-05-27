@@ -24,6 +24,7 @@ Workflow execution follows this sequence:
 This orchestration design enables automated, production-style pipeline execution without manual intervention.
 
 ## ETL Script
+![Architecture Diagram](images/ETL-JobRunSuccess.JPG)
 The PySpark ETL implementation is located here:
 
 `scripts/hospital_etl_incremental.py`
@@ -55,6 +56,19 @@ Example monitored events include:
 - Watermark updated successfully
 
 These logs provide visibility into pipeline execution and simplify troubleshooting and operational support.
+
+ Job Execution
+
+![Architecture Diagram](images/ETL-JobRunSuccess.JPG)
+
+The AWS Glue PySpark ETL job successfully processes hospital appointment datasets and generates partitioned parquet outputs in the curated Amazon S3 layer.
+
+The ETL process includes:
+- Spark-based joins and transformations
+- billing aggregations
+- data quality filtering
+- incremental watermark processing
+- partitioned parquet generation
 
 
 Workflow screenshot

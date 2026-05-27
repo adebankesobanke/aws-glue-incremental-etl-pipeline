@@ -9,7 +9,7 @@
 ## Overview
 ## Workflow Orchestration
 
-![Workflow Graph](images/workflow-graph.jpg)
+![Workflow Graph](images/workflow.jpg)
 
 The pipeline uses AWS Glue Workflows to orchestrate the end-to-end ETL process.
 
@@ -58,7 +58,7 @@ These logs provide visibility into pipeline execution and simplify troubleshooti
 
 
 Workflow screenshot
-![Architecture Diagram](images/workflow-graph.JPG)
+![Architecture Diagram](images/workflow.JPG)
 
 
 
